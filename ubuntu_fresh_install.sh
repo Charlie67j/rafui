@@ -104,10 +104,8 @@ if [[ $docker -eq "y" ]] || [[ $docker -eq "yes" ]]; then
 ######################################################################################################
 "
     docker -v
-
 else 
     echo "Docker was not installed"
- 
 fi
 
 # Wireguard install
