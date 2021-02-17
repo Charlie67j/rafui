@@ -76,9 +76,7 @@ sudo service ssh restart
 # Docker option install 
 echo "
 ######################################################################################################
-
-Do you want to install docker? If so type y / If you don't wish to install enter n
-
+Do you want to install docker? If so type y / If you dont want to install enter n
 ######################################################################################################
 "
 read $docker
@@ -95,7 +93,6 @@ if [[ $docker -eq "y" ]] || [[ $docker -eq "yes" ]]; then
     echo " 
     
         Installing Portainer on port 9000
-
     "
 
     sudo docker volume create portainer_data
