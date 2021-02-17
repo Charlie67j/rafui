@@ -118,11 +118,11 @@ Would you like to install a WireGuard VPN Server? If so enter y / If you don't w
 "
 read $vpn
 
-if [[ $vpn -eq "y" ]] || [ $vpn -eq "yes" ]] ; then 
+if [[ $vpn -eq "y" ]] || [[ $vpn -eq "yes" ]] ; then 
     wget https://raw.githubusercontent.com/Charlie67j/wginstall/master/wireguard-install.sh -O wireguard-install.sh
     bash wireguard-install.sh
 
-elif  [[ $vpn -eq "n" ]] || [ $vpn -eq "no" ]] ; then 
+elif  [[ $vpn -eq "n" ]] || [[ $vpn -eq "no" ]] ; then 
     echo "WireGuard wasn't installed"
 else 
     echo "Error Install Aborted!"
