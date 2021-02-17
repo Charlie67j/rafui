@@ -104,7 +104,7 @@ if [[ $docker -eq "y" ]] || [[ $docker -eq "yes" ]]; then
 ######################################################################################################
 "
     docker -v
-else 
+    else 
     echo "Docker was not installed"
 fi
 
