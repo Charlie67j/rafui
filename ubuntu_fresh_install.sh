@@ -103,8 +103,8 @@ if [[ $docker -eq "y" ]] || [[ $docker -eq "yes" ]]; then
                             Congrats Docker has been installed
 ######################################################################################################
 "
-    docker -v
-    else 
+    #docker -v
+else 
     echo "Docker was not installed"
 fi
 
