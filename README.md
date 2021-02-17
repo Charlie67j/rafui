@@ -15,5 +15,5 @@ Script to run on fresh Ubuntu installation to do the following:
 
 To use this script, after installing a fresh Ubuntu Server, run this command:
 
-wget https://raw.githubusercontent.com/Charlie67j/rafui/master/ubuntu_fresh_install.sh && bash ubuntu_fresh_install.sh
+wget https://raw.githubusercontent.com/Charlie67j/rafui/master/ubuntu_fresh_install.sh && sudo bash ubuntu_fresh_install.sh
 
