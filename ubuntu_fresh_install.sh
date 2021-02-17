@@ -30,7 +30,7 @@ echo "PermitRootLogin no" >> /etc/ssh/sshd_config
 echo "PermitEmptyPasswords no" /etc/ssh/sshd_config
 
 # Message of the day 
-sudo wget https://raw.githubusercontent.com/jwandrews99/Linux-Automation/master/misc/motd.sh
+sudo wget https://raw.githubusercontent.com/Charlie67j/sshmotd/master/sshmotd.sh
 sudo mv motd.sh /etc/update-motd.d/05-info
 sudo chmod +x /etc/update-motd.d/05-info
 
@@ -125,7 +125,7 @@ Would you like to install a WireGuard VPN Server? If so enter y / If you don't w
 read $vpn
 
 if [[ $vpn -eq "y" ]] || [ $vpn -eq "yes" ]] ; then 
-    wget https://raw.githubusercontent.com/l-n-s/wireguard-install/master/wireguard-install.sh -O wireguard-install.sh
+    wget https://raw.githubusercontent.com/Charlie67j/wginstall/master/wireguard-install.sh -O wireguard-install.sh
     bash wireguard-install.sh
 
 elif  [[ $vpn -eq "n" ]] || [ $vpn -eq "no" ]] ; then 
