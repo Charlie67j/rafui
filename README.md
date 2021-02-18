@@ -15,7 +15,7 @@ Script to run on fresh Ubuntu installation to do the following:
 
 
 
-If you created a non-root user as part of the setup, you can move on. If not, first create a non-rute user and add them to the sudo group like this. Be sure to replace "newusername" with the actual user name that you wish to create. 
+If you created a non-root user as part of the setup, you can move on. If not, first create a non-root user and add them to the sudo group like this. Be sure to replace "newusername" with the actual user name that you wish to create. 
 1. From the root termianl issue the following command:  adduser newusername
 2. Fill out the information, the password is the only important part. 
 3. Next add the new user to the sudo group using this command:  usermod -aG sudo newusername
