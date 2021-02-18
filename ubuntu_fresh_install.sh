@@ -4,11 +4,11 @@
 # This is a basic install, easily configurable to your needs
 #
 # Test to see if user is running with root privileges.
-if [[ "${UID}" -ne 0 ]];
-then
- echo 'Must execute with sudo or root' >&2
- exit 1
-fi
+#if [[ "${UID}" -ne 0 ]];
+#then
+# echo 'Must execute with sudo or root' >&2
+ #exit 1
+#fi
 
 # Ensure system is up to date
 sudo apt-get update -y 
@@ -31,7 +31,7 @@ echo "PermitEmptyPasswords no" /etc/ssh/sshd_config
 
 # Message of the day 
 sudo wget https://raw.githubusercontent.com/Charlie67j/sshmotd/main/sshmotd.sh
-sudo mv motd.sh /etc/update-motd.d/05-info
+sudo mv sshmotd.sh /etc/update-motd.d/05-info
 sudo chmod +x /etc/update-motd.d/05-info
 
 # Automatic downloads of security updates
