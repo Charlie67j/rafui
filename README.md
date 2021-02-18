@@ -4,7 +4,7 @@ Script to run on fresh Ubuntu installation to do the following:
 1. Update the system with the latest patches
 2. Install Open-SSH Server
 3. Enable UFW and allow OpenSSH
-4. Disable root login
+4. Disable root SSH login
 5. Setup an SSH login message that shows current system status
 6. Setup automatic security updates for unattended installation
 7. Install and configure Fail2Ban (maxretry 4)
